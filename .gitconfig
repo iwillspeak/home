@@ -1,0 +1,29 @@
+[user]
+	name = Will Speak
+	email = lithiumflame@gmail.com
+[cli]
+[color]
+	ui = true
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[diff]
+	tool = Kaleidoscope
+[difftool]
+	prompt = false
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
+[mergetool]
+	prompt = false
+[merge]
+	tool = Kaleidoscope
+[alias]
+	stat = status -sb
+	graph = log --oneline --graph --decorate
+	sync = !git pull --rebase && git push
+[github]
+	user = iwillspeak
+[core]
+	excludesfile = /Users/will/.gitignore_global
+[push]
+	default = simple
