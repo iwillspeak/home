@@ -1,0 +1,9 @@
+# The one true editor!
+brew "emacs"
+
+# Useful utilities
+brew "readline"
+brew "tree"
+
+# Dev stuff
+brew "omnisharp"
