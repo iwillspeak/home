@@ -6,4 +6,5 @@ brew "readline"
 brew "tree"
 
 # Dev stuff
+brew "git"
 brew "omnisharp"
