@@ -10,3 +10,5 @@ brew "tree"
 # Dev stuff
 brew "git"
 brew "omnisharp"
+cask "java"
+brew "git-credential-manager"
