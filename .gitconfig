@@ -1,6 +1,5 @@
-[user]
-	name = Will Speak
-	email = lithiumflame@gmail.com
+[include]
+	path = ~/.gitconfig_local
 [cli]
 [color]
 	ui = true
