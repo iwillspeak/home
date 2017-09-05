@@ -23,6 +23,6 @@
 [github]
 	user = iwillspeak
 [core]
-	excludesfile = /Users/will/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [push]
 	default = simple
