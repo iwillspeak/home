@@ -9,6 +9,7 @@ brew "tree"
 
 # Dev stuff
 brew "git"
+brew "openssl"
 brew "omnisharp"
 cask "java"
 brew "git-credential-manager"
