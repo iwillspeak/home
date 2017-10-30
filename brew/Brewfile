@@ -6,6 +6,8 @@ cask "emacs"
 # Useful utilities
 brew "readline"
 brew "tree"
+brew "rg"
+brew "fd"
 
 # Dev stuff
 brew "git"
