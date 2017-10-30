@@ -24,5 +24,6 @@
 	user = iwillspeak
 [core]
 	excludesfile = ~/.gitignore_global
+	autocrlf = input
 [push]
 	default = simple
