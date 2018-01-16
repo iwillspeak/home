@@ -10,6 +10,6 @@ ln -sh ${DIR}/.inputrc ~/.inputrc
 ln -sh ${DIR}/.bashrc ~/.bashrc
 ln -sh ${DIR}/.bash_profile ~/.bash_profile
 
-open "http://color.smyck.org/"
+colourtheme/install.sh
 
 brew/install.sh
