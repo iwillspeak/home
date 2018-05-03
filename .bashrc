@@ -11,5 +11,7 @@ do
 	esac
 done
 
+alias gti='git'
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
