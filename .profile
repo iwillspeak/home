@@ -19,5 +19,5 @@ GIT_EDITOR="${EDITOR} -nw"
 export GIT_EDITOR
 
 # I'm not hoarding these, honest..
-export LLVM_SYS_39_PREFIX=/usr/local/opt/llvm\@3.9
-export LLVM_SYS_60_PREFIX=/usr/local/opt/llvm
+export LLVM_SYS_60_PREFIX=/usr/local/opt/llvm\@6.0
+export LLVM_SYS_70_PREFIX=/usr/local/opt/llvm
