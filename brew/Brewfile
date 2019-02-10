@@ -9,6 +9,7 @@ brew "tree"
 brew "ripgrep"
 brew "fd"
 brew "jq"
+brew "aspell"
 
 # Dev stuff
 brew "git"
