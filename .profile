@@ -1,6 +1,7 @@
 # Add applications to the path here
 PATH=/usr/local/bin:$PATH             # Local bin (brew)
 PATH=~/.cargo/bin:$PATH               # Cargo installed binaries
+PATH=~/.dotnet/tools:$PATH            # dotnet global tools
 PATH=/usr/local/opt/ruby/bin:$PATH    # Ruby gem executeables
 PATH=~/.bin:$PATH                     # user programs
 export PATH
