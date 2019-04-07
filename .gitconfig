@@ -20,6 +20,7 @@
 	stat = status -sb
 	graph = log --oneline --graph --decorate
 	sync = !git pull --rebase && git push
+	cruft = clean -nxdf
 [github]
 	user = iwillspeak
 [core]
