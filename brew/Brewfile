@@ -1,5 +1,3 @@
-tap "omnisharp/omnisharp-roslyn"
-
 # The one true editor!
 cask "emacs"
 
