@@ -22,4 +22,5 @@ export GIT_EDITOR
 # I'm not hoarding these, honest..
 export LLVM_SYS_60_PREFIX=/usr/local/opt/llvm\@6.0
 export LLVM_SYS_70_PREFIX=/usr/local/opt/llvm\@7
-export LLVM_SYS_80_PREFIX=/usr/local/opt/llvm
+export LLVM_SYS_80_PREFIX=/usr/local/opt/llvm\@8
+export LLVM_SYS_90_PREFIX=/usr/local/opt/llvm
