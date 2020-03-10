@@ -3,19 +3,27 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # link up the dotfiles containing global settings
-ln -sh ${DIR}/.profile ~/.profile
-ln -sh ${DIR}/.emacs.d ~/.emacs.d
-ln -sh ${DIR}/.gitconfig ~/.gitconfig
-ln -sh ${DIR}/.gitignore_global ~/.gitignore_global
-ln -sh ${DIR}/.inputrc ~/.inputrc
-ln -sh ${DIR}/.bashrc ~/.bashrc
-ln -sh ${DIR}/.bash_profile ~/.bash_profile
+ln -sni ${DIR}/.profile ~/.profile
+ln -sni ${DIR}/.emacs.d ~/.emacs.d
+ln -sni ${DIR}/.gitconfig ~/.gitconfig
+ln -sni ${DIR}/.gitignore_global ~/.gitignore_global
+ln -sni ${DIR}/.inputrc ~/.inputrc
+ln -sni ${DIR}/.bashrc ~/.bashrc
+ln -sni ${DIR}/.bash_profile ~/.bash_profile
 
-# install the Terminal colour theme
-colourtheme/install.sh
-
-# Install Homebrew and packages
-brew/install.sh
-
-# Fixup the font rendering in Visual Studio Code
-defaults write com.microsoft.VSCode.helper CGFontRenderingFontSmoothingDisabled -bool NO
+case uname in
+	Darwin)
+		echo "Installing macOS speicalities"
+		# install the Terminal colour theme
+		colourtheme/install.sh
+		# Install Homebrew and packages
+		brew/install.sh
+		# Fixup the font rendering in Visual Studio Code
+		defaults write com.microsoft.VSCode.helper CGFontRenderingFontSmoothingDisabled -bool NO
+		;;
+	
+	Linux)
+		echo "Installing linux speicalities"
+		# TODO: linux stuff
+		;;
+esac
