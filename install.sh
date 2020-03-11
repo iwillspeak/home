@@ -11,9 +11,10 @@ ln -sni ${DIR}/.inputrc ~/.inputrc
 ln -sni ${DIR}/.bashrc ~/.bashrc
 ln -sni ${DIR}/.bash_profile ~/.bash_profile
 
-case uname in
+case `uname` in
 	Darwin)
-		echo "Installing macOS speicalities"
+ "Installing macOS speicalities"
+		ln -sni ${DIR}/code/settings.json ~/Library/Application\ Support/Code/User/settings.json
 		# install the Terminal colour theme
 		colourtheme/install.sh
 		# Install Homebrew and packages
@@ -24,6 +25,6 @@ case uname in
 	
 	Linux)
 		echo "Installing linux speicalities"
-		# TODO: linux stuff
+		ln -sni ${DIR}/code/settings.json ~/.config/Code/User/settings.json
 		;;
 esac
