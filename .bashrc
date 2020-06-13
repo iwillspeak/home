@@ -19,6 +19,11 @@ do
 	esac
 done
 
+if [ -d "/usr/local/Cellar/chicken/5.2.0/bin/" ]
+then
+	alias chickeni="/usr/local/Cellar/chicken/5.2.0/bin/csi"
+fi
+
 alias gti='git'
 
 ### Added by the Heroku Toolbelt
