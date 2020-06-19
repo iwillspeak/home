@@ -13,7 +13,7 @@ ln -sni ${DIR}/.bash_profile ~/.bash_profile
 
 case `uname` in
 	Darwin)
- "Installing macOS speicalities"
+		echo "Installing macOS speicalities"
 		ln -sni ${DIR}/code/settings.json ~/Library/Application\ Support/Code/User/settings.json
 		# install the Terminal colour theme
 		colourtheme/install.sh
