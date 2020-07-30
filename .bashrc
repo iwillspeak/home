@@ -19,9 +19,22 @@ do
 	esac
 done
 
+# Alias Chicken Scheme to avoid a clash with the C# compiler
 if [ -d "/usr/local/Cellar/chicken/5.2.0/bin/" ]
 then
 	alias chickeni="/usr/local/Cellar/chicken/5.2.0/bin/csi"
+fi
+
+# Completions for NUKEBuild, if the global tool is installed
+if which nuke
+then
+	_nuke_bash_complete()
+	{
+		local word=${COMP_WORDS[COMP_CWORD]}
+		local completions="$(nuke :complete "${COMP_LINE}")"
+		COMPREPLY=( $(compgen -W "$completions" -- "$word") )
+	}
+	complete -f -F _nuke_bash_complete nuke
 fi
 
 alias gti='git'
