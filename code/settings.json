@@ -52,4 +52,7 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.fontFamily": "'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace",
     "omnisharp.useGlobalMono": "never",
+    "debug.onTaskErrors": "showErrors",
+    "razor.disabled": true,
+    "git.autoStash": true,
 }
