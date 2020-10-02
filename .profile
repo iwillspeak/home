@@ -19,6 +19,9 @@ export EDITOR
 GIT_EDITOR="${EDITOR} -nw"
 export GIT_EDITOR
 
+# GCP credentials symlink
+export GOOGLE_APPLICATION_CREDENTIALS=$HOME/GcpCredentials/default.json
+
 # I'm not hoarding these, honest..
 export LLVM_SYS_90_PREFIX=/usr/local/opt/llvm\@9
 export LLVM_SYS_100_PREFIX=/usr/local/opt/llvm
