@@ -55,4 +55,10 @@
     "debug.onTaskErrors": "showErrors",
     "razor.disabled": true,
     "git.autoStash": true,
+    "gitlens.views.repositories.location": "gitlens",
+    "gitlens.views.fileHistory.location": "gitlens",
+    "gitlens.views.lineHistory.location": "gitlens",
+    "gitlens.views.compare.location": "gitlens",
+    "gitlens.views.search.location": "gitlens",
+    "git.enableSmartCommit": true,
 }
