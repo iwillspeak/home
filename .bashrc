@@ -1,5 +1,17 @@
-# Update the prompt to [user@host:dir] $
-PS1="[\[\e[1;31m\]\u\[\e[m\]@\[\e[1;32m\]\h\[\e[m\]:\[\e[1;35m\]\W\[\e[m\]] \[\e[0;37m\]\$\[\e[m\] "
+
+case "$TERM" in
+	"dumb")
+		PS1="[\u@\h:\W] \$ "
+		;;
+	"tramp")
+		# Emacs TRAMP requires a super basic prompt
+		PS1="\$ "
+		;;
+	*)
+		# Update the prompt to [user@host:dir] $
+		PS1="[\[\e[1;31m\]\u\[\e[m\]@\[\e[1;32m\]\h\[\e[m\]:\[\e[1;35m\]\W\[\e[m\]] \[\e[0;37m\]\$\[\e[m\] "
+		;;
+esac
 export PS1
 
 # Silence the deprecation warning in macOS
