@@ -39,7 +39,7 @@ then
 fi
 
 # Completions for NUKEBuild, if the global tool is installed
-if which nuke
+if command -v nuke >/dev/null 2>&1
 then
 	_nuke_bash_complete()
 	{
