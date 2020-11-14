@@ -61,4 +61,8 @@
     "gitlens.views.compare.location": "gitlens",
     "gitlens.views.search.location": "gitlens",
     "git.enableSmartCommit": true,
+    "workbench.activityBar.visible": true,
+    "workbench.statusBar.visible": true,
+    "window.menuBarVisibility": "toggle",
+    "FSharp.useSdkScripts": true,
 }
