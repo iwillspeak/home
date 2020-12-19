@@ -30,3 +30,5 @@
 	default = simple
 [init]
 	defaultBranch = main
+[pull]
+	rebase = true
