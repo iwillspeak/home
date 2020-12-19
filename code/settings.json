@@ -1,7 +1,7 @@
 {
     "explorer.confirmDragAndDrop": false,
     "workbench.colorTheme": "Dracula",
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "workbench.startupEditor": "newUntitledFile",
     "extensions.ignoreRecommendations": false,
     "git.autofetch": true,
