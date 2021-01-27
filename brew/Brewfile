@@ -12,5 +12,5 @@ brew "aspell"
 # Dev stuff
 brew "git"
 brew "openssl"
-cask "java"
+# cask "java"
 brew "git-credential-manager"
