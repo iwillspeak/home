@@ -1,6 +1,5 @@
 {
     "explorer.confirmDragAndDrop": false,
-    "workbench.colorTheme": "Dracula",
     "window.zoomLevel": 1,
     "workbench.startupEditor": "newUntitledFile",
     "extensions.ignoreRecommendations": false,
@@ -65,4 +64,6 @@
     "workbench.statusBar.visible": true,
     "window.menuBarVisibility": "toggle",
     "FSharp.useSdkScripts": true,
+    "workbench.colorTheme": "Dracula",
+    "terminal.integrated.allowChords": false,
 }
