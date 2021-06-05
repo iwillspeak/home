@@ -26,5 +26,6 @@ case `uname` in
 	Linux)
 		echo "Installing linux speicalities"
 		ln -sni ${DIR}/code/settings.json ~/.config/Code/User/settings.json
+		sudo ln -sni ${DIR}/logid.cfg /etc/logid.cfg
 		;;
 esac
