@@ -27,3 +27,4 @@ export LLVM_SYS_90_PREFIX=/usr/local/opt/llvm\@9
 export LLVM_SYS_100_PREFIX=/usr/local/opt/llvm
 
 export LLVM_CONFIG_PATH=${LLVM_SYS_100_PREFIX}/bin/llvm-config
+. "$HOME/.cargo/env"
