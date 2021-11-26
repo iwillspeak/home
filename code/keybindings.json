@@ -23,5 +23,34 @@
     {
         "key": "alt+s",
         "command": "magit.status"
+    },
+    {
+        "key": "alt+.",
+        "command": "editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "alt+,",
+        "command": "editor.action.goToReferences",
+        "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+    },
+    {
+        "key": "alt+shift+/",
+        "command": "editor.action.showHover",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+.",
+        "command": "editor.action.addSelectionToNextFindMatch",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+,",
+        "command": "editor.action.addSelectionToPreviousFindMatch",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "Ctrl+t",
+        "command": "editor.action.transpose"
     }
 ]
