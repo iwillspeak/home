@@ -60,8 +60,8 @@
     "git.enableSmartCommit": true,
     "workbench.activityBar.visible": true,
     "workbench.statusBar.visible": true,
-    "window.menuBarVisibility": "toggle",
     "FSharp.useSdkScripts": true,
     "workbench.colorTheme": "Dracula",
-    "terminal.integrated.allowChords": false
+    "terminal.integrated.allowChords": false,
+    "window.menuBarVisibility": "hidden"
 }
