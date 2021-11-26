@@ -1,0 +1,27 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+;",
+        "command": "undo"
+    },
+    {
+        "key": "Ctrl+x Ctrl+=",
+        "command": "workbench.action.zoomIn"
+    },
+    {
+        "key": "Ctrl+x Ctrl+-",
+        "command": "workbench.action.zoomOut"
+    },
+    {
+        "key": "Ctrl+=",
+        "command": "editor.action.smartSelect.expand"
+    },
+    {
+        "key": "Ctrl+Shift+=",
+        "command": "editor.action.smartSelect.shrink"
+    },
+    {
+        "key": "alt+s",
+        "command": "magit.status"
+    }
+]

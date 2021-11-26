@@ -1,6 +1,5 @@
 {
     "explorer.confirmDragAndDrop": false,
-    "window.zoomLevel": 1,
     "workbench.startupEditor": "newUntitledFile",
     "extensions.ignoreRecommendations": false,
     "git.autofetch": true,
@@ -50,7 +49,6 @@
     "editor.renderWhitespace": "none",
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.fontFamily": "'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace",
-    "omnisharp.useGlobalMono": "never",
     "debug.onTaskErrors": "showErrors",
     "razor.disabled": true,
     "git.autoStash": true,
@@ -65,5 +63,5 @@
     "window.menuBarVisibility": "toggle",
     "FSharp.useSdkScripts": true,
     "workbench.colorTheme": "Dracula",
-    "terminal.integrated.allowChords": false,
+    "terminal.integrated.allowChords": false
 }
