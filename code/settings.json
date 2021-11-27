@@ -58,10 +58,12 @@
     "gitlens.views.compare.location": "gitlens",
     "gitlens.views.search.location": "gitlens",
     "git.enableSmartCommit": true,
-    "workbench.activityBar.visible": true,
     "workbench.statusBar.visible": true,
     "FSharp.useSdkScripts": true,
     "workbench.colorTheme": "Dracula",
     "terminal.integrated.allowChords": false,
-    "window.menuBarVisibility": "hidden"
+    "window.menuBarVisibility": "hidden",
+    "workbench.activityBar.visible": false,
+    "emacs-mcx.strictEmacsMove": true,
+    "editor.cursorWidth": 4
 }

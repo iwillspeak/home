@@ -52,5 +52,23 @@
     {
         "key": "Ctrl+t",
         "command": "editor.action.transpose"
+    },
+    {
+        "key": "ctrl+shift+9",
+        "command": "workbench.action.closeSidebar",
+        "when": "sideBarVisible"
+    },
+    {
+        "key": "ctrl+shift+9",
+        "command": "emacs-mcx.executeCommands",
+        "args": [
+            "workbench.action.toggleSidebarVisibility",
+            "workbench.action.focusSideBar"
+        ],
+        "when": "!sideBarVisible"
+    },
+    {
+        "key": "ctrl+shift+0",
+        "command": "workbench.action.toggleActivityBarVisibility"
     }
 ]
