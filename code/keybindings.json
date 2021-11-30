@@ -5,6 +5,10 @@
         "command": "undo"
     },
     {
+        "key": "alt+;",
+        "command": "editor.action.commentLine"
+    },
+    {
         "key": "Ctrl+x Ctrl+=",
         "command": "workbench.action.zoomIn"
     },

@@ -60,10 +60,11 @@
     "git.enableSmartCommit": true,
     "workbench.statusBar.visible": true,
     "FSharp.useSdkScripts": true,
-    "workbench.colorTheme": "Dracula",
+    "workbench.colorTheme": "Night Owl",
     "terminal.integrated.allowChords": false,
     "window.menuBarVisibility": "hidden",
-    "workbench.activityBar.visible": false,
     "emacs-mcx.strictEmacsMove": true,
-    "editor.cursorWidth": 4
+    "editor.cursorWidth": 4,
+    "gtkTitleBar.mode": "dark",
+    "workbench.activityBar.visible": false
 }
