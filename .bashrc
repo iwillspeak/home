@@ -1,4 +1,3 @@
-
 case "$TERM" in
 	"dumb")
 		PS1="[\u@\h:\W] \$ "
@@ -54,4 +53,17 @@ alias gti='git'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-. "$HOME/.cargo/env"
+
+### Added by Cargo ####
+if [ -f "$HOME/.cargo/env" ]
+then
+   . "$HOME/.cargo/env"
+fi
+
+### Added by Gcloud ####
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/will.speak/google-cloud-sdk/path.bash.inc' ]; then . '/Users/will.speak/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/will.speak/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/will.speak/google-cloud-sdk/completion.bash.inc'; fi
