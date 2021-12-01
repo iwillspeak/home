@@ -66,5 +66,7 @@
     "emacs-mcx.strictEmacsMove": true,
     "editor.cursorWidth": 4,
     "gtkTitleBar.mode": "dark",
+    "emacs-mcx.useMetaPrefixMacCmd": true,
+    "workbench.editor.showTabs": false,
     "workbench.activityBar.visible": false
 }

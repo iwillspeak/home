@@ -5,8 +5,14 @@
         "command": "undo"
     },
     {
+        "key": "cmd+;",
+        "command": "editor.action.commentLine",
+        "when": "config.emacs-mcx.useMetaPrefixMacCmd"
+    },
+    {
         "key": "alt+;",
-        "command": "editor.action.commentLine"
+        "command": "editor.action.commentLine",
+        "when": "!config.emacs-mcx.useMetaPrefixMacCmd"
     },
     {
         "key": "Ctrl+x Ctrl+=",
@@ -25,23 +31,44 @@
         "command": "editor.action.smartSelect.shrink"
     },
     {
+        "key": "cmd+s",
+        "command": "magit.status",
+        "when": "config.emacs-mcx.useMetaPrefixMacCmd"
+    },
+    {
         "key": "alt+s",
-        "command": "magit.status"
+        "command": "magit.status",
+        "when": "!config.emacs-mcx.useMetaPrefixMacCmd"
+    },
+    {
+        "key": "cmd+.",
+        "command": "editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor && config.emacs-mcx.useMetaPrefixMacCmd"
     },
     {
         "key": "alt+.",
         "command": "editor.action.revealDefinition",
-        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor && !config.emacs-mcx.useMetaPrefixMacCmd"
+    },
+    {
+        "key": "cmd+,",
+        "command": "editor.action.goToReferences",
+        "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor && config.emacs-mcx.useMetaPrefixMacCmd"
     },
     {
         "key": "alt+,",
         "command": "editor.action.goToReferences",
-        "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+        "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor && !config.emacs-mcx.useMetaPrefixMacCmd"
+    },
+    {
+        "key": "cmd+shift+/",
+        "command": "editor.action.showHover",
+        "when": "editorTextFocus  && config.emacs-mcx.useMetaPrefixMacCmd"
     },
     {
         "key": "alt+shift+/",
         "command": "editor.action.showHover",
-        "when": "editorTextFocus"
+        "when": "editorTextFocus && !config.emacs-mcx.useMetaPrefixMacCmd"
     },
     {
         "key": "ctrl+shift+.",
