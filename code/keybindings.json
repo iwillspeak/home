@@ -101,5 +101,10 @@
     {
         "key": "ctrl+shift+0",
         "command": "workbench.action.toggleActivityBarVisibility"
+    },
+    {
+        "key": "ctrl+.",
+        "command": "editor.action.quickFix",
+        "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
     }
 ]
