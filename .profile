@@ -1,10 +1,20 @@
 # Add applications to the path here
-PATH=/usr/local/bin:$PATH             # Local bin (brew)
-PATH=~/.cargo/bin:$PATH               # Cargo installed binaries
-PATH=~/.dotnet/tools:$PATH            # dotnet global tools
-PATH=/usr/local/opt/ruby/bin:$PATH    # Ruby gem executeables
-PATH=~/bin:$PATH                      # user programs
-PATH=~/.bin:$PATH                     # user programs
+function maybe_add_path() {
+   pathItem=$1
+   if [ -d $1 ]
+   then
+      PATH="${pathItem}:${PATH}"
+   fi
+}
+
+maybe_add_path /usr/local/bin            # Local bin (brew)
+maybe_add_path ~/.cargo/bin              # Cargo installed binaries
+maybe_add_path ~/.dotnet/tools           # dotnet global tools
+maybe_add_path ~/go/bin                  # Go binaries
+maybe_add_path /usr/local/opt/ruby/bin   # Ruby gem executeables
+maybe_add_path ~/bin                     # user programs
+maybe_add_path ~/.bin                    # user programs
+
 export PATH
 
 # Update ls and friends to use coloured output
