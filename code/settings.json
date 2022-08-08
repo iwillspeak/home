@@ -69,5 +69,11 @@
     "FSharp.inlayHints.parameterNames": false,
     "FSharp.inlayHints.typeAnnotations": false,
     "FSharp.inlayHints.enabled": false,
+    "FSharp.dotnetRoot": "/usr/bin",
+    "settingsSync.ignoredSettings": [
+        "FSharp.dotnetRoot"
+    ],
+    "rust-analyzer.inlayHints.parameterHints.enable": false,
+    "rust-analyzer.inlayHints.typeHints.enable": false,
     "workbench.activityBar.visible": false
 }
