@@ -39,8 +39,23 @@ export LLVM_SYS_100_PREFIX=/usr/local/opt/llvm
 
 export LLVM_CONFIG_PATH=${LLVM_SYS_100_PREFIX}/bin/llvm-config
 
+# Source all files in $HOME/.env/
+if [ -d "$HOME/.env" ]; then
+   for env_file in "$HOME/.env/"*; do
+      [ -f "$env_file" ] && . "$env_file"
+   done
+fi
+
 ### Added by Cargo ####
 if [ -f "$HOME/.cargo/env" ]
 then
    . "$HOME/.cargo/env"
 fi
+
+### Added by Gcloud ####
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '$HOME/google-cloud-sdk/path.bash.inc' ]; then . '$HOME/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '$HOME/google-cloud-sdk/completion.bash.inc' ]; then . '$HOME/google-cloud-sdk/completion.bash.inc'; fi
