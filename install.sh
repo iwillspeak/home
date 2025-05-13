@@ -1,5 +1,8 @@
 #! /usr/bin/env bash
 
+mkdir -p ~/.copilot
+mkdir -p ~/.config
+
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # link up the dotfiles containing global settings
@@ -10,6 +13,7 @@ ln -sni ${DIR}/.gitignore_global ~/.gitignore_global
 ln -sni ${DIR}/.inputrc ~/.inputrc
 ln -sni ${DIR}/.bashrc ~/.bashrc
 ln -sni ${DIR}/.bash_profile ~/.bash_profile
+ln -sni ${DIR}/copilot/config.json ~/.copilot/config.json
 
 case `uname` in
 	Darwin)
@@ -26,6 +30,7 @@ case `uname` in
 	
 	Linux)
 		echo "Installing linux speicalities"
+		mkdir -p ~/.config/Code/User
 		ln -sni ${DIR}/code/settings.json ~/.config/Code/User/settings.json
 		ln -sni ${DIR}/code/keybindings.json ~/.config/Code/User/keybindings.json
 		sudo ln -sni ${DIR}/logid.cfg /etc/logid.cfg

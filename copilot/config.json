@@ -1,0 +1,4 @@
+{
+    "defaultCommitMessagePrompt": "Write a commit message in Conventional Commits format. Use one of the following types: feat, fix, docs, style, refactor, perf, test, build, ci, chore, revert. Keep the first line of the message concise and under 72 characters. Include a more detailed summary of the changes in additional paragraphs. Example summary: 'feat(auth): add JWT authentication support'."
+}
+  
