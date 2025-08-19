@@ -58,12 +58,11 @@
     "editor.cursorWidth": 4,
     "gtkTitleBar.mode": "dark",
     "emacs-mcx.useMetaPrefixMacCmd": true,
-    "omnisharp.organizeImportsOnFormat": true,
     "omnisharp.useModernNet": true,
     "workbench.colorTheme": "Night Owl",
     "redhat.telemetry.enabled": true,
     "FSharp.suggestGitignore": false,
-    "workbench.editor.showTabs": false,
+    "workbench.editor.showTabs": "single",
     "window.menuBarVisibility": "toggle",
     "editor.bracketPairColorization.enabled": false,
     "FSharp.inlayHints.parameterNames": false,
@@ -75,5 +74,6 @@
     ],
     "rust-analyzer.inlayHints.parameterHints.enable": false,
     "rust-analyzer.inlayHints.typeHints.enable": false,
-    "workbench.activityBar.visible": false
+    "dotnet.formatting.organizeImportsOnFormat": true,
+    "github.copilot.nextEditSuggestions.enabled": true
 }

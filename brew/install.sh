@@ -8,8 +8,6 @@ then
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-# Tap the brew bundle command
-brew tap homebrew/bundle
 brew bundle
 
 ln -sh /usr/local/opt/openssl/lib/libcrypto.1.0.0.dylib /usr/local/lib/

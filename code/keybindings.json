@@ -106,5 +106,10 @@
         "key": "ctrl+.",
         "command": "editor.action.quickFix",
         "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+3",
+        "command": "-emacs-mcx.digitArgument",
+        "when": "config.emacs-mcx.enableDigitArgument && config.emacs-mcx.useMetaPrefixAlt && editorTextFocus && !emacs-mcx.acceptingArgument"
     }
 ]

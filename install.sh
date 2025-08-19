@@ -12,6 +12,7 @@ ln -sni ${DIR}/.gitconfig ~/.gitconfig
 ln -sni ${DIR}/.gitignore_global ~/.gitignore_global
 ln -sni ${DIR}/.inputrc ~/.inputrc
 ln -sni ${DIR}/.bashrc ~/.bashrc
+ln -sni ${DIR}/.zshrc ~/.zshrc
 ln -sni ${DIR}/.bash_profile ~/.bash_profile
 ln -sni ${DIR}/copilot/config.json ~/.copilot/config.json
 

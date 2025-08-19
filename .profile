@@ -7,6 +7,7 @@ function maybe_add_path() {
    fi
 }
 
+maybe_add_path /opt/homebrew/bin         # Brew Bin
 maybe_add_path /usr/local/bin            # Local bin (brew)
 maybe_add_path ~/.cargo/bin              # Cargo installed binaries
 maybe_add_path ~/.dotnet/tools           # dotnet global tools
