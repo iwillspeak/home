@@ -75,5 +75,6 @@
     "rust-analyzer.inlayHints.parameterHints.enable": false,
     "rust-analyzer.inlayHints.typeHints.enable": false,
     "dotnet.formatting.organizeImportsOnFormat": true,
-    "github.copilot.nextEditSuggestions.enabled": true
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "workbench.secondarySideBar.defaultVisibility": "hidden"
 }
