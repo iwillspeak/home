@@ -76,5 +76,22 @@
     "rust-analyzer.inlayHints.typeHints.enable": false,
     "dotnet.formatting.organizeImportsOnFormat": true,
     "github.copilot.nextEditSuggestions.enabled": true,
-    "workbench.secondarySideBar.defaultVisibility": "hidden"
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "chat.tools.terminal.autoApprove": {
+        "npm run build:release": true,
+        "npm run test:unit": true,
+        "npm run build": true,
+        "npm list": true,
+        "npm run codegen": true,
+        "git checkout": true,
+        "git tag": true,
+        "crispbuild runsca": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "git fetch": true,
+        "jq": true
+    },
+    "workbench.activityBar.location": "hidden"
 }
