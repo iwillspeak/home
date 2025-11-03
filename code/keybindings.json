@@ -90,12 +90,29 @@
         "when": "sideBarVisible"
     },
     {
+        "key": "ctrl+alt+9",
+        "command": "workbench.action.toggleAuxiliaryBar",
+    },
+    {
+        "key": "ctrl+alt+0",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.closeSidebar",
+                "workbench.action.closePanel",
+                "workbench.action.closeAuxiliaryBar"
+            ]
+        }
+    },
+    {
         "key": "ctrl+shift+9",
-        "command": "emacs-mcx.executeCommands",
-        "args": [
-            "workbench.action.toggleSidebarVisibility",
-            "workbench.action.focusSideBar"
-        ],
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.toggleSidebarVisibility",
+                "workbench.action.focusSideBar"
+            ]
+        },
         "when": "!sideBarVisible"
     },
     {
