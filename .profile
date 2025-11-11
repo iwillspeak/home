@@ -31,9 +31,6 @@ export EDITOR
 GIT_EDITOR="${EDITOR} -nw"
 export GIT_EDITOR
 
-# GCP credentials symlink
-export GOOGLE_APPLICATION_CREDENTIALS=$HOME/GcpCredentials/default.json
-
 # I'm not hoarding these, honest..
 export LLVM_SYS_90_PREFIX=/usr/local/opt/llvm\@9
 export LLVM_SYS_100_PREFIX=/usr/local/opt/llvm
@@ -60,3 +57,5 @@ if [ -f '$HOME/google-cloud-sdk/path.bash.inc' ]; then . '$HOME/google-cloud-sdk
 
 # The next line enables shell command completion for gcloud.
 if [ -f '$HOME/google-cloud-sdk/completion.bash.inc' ]; then . '$HOME/google-cloud-sdk/completion.bash.inc'; fi
+
+. "$HOME/.local/bin/env"
