@@ -9,12 +9,13 @@ function maybe_add_path() {
 
 maybe_add_path /opt/homebrew/bin         # Brew Bin
 maybe_add_path /usr/local/bin            # Local bin (brew)
-maybe_add_path ~/.cargo/bin              # Cargo installed binaries
-maybe_add_path ~/.dotnet/tools           # dotnet global tools
-maybe_add_path ~/go/bin                  # Go binaries
+maybe_add_path $HOME/.cargo/bin              # Cargo installed binaries
+maybe_add_path $HOME/.dotnet/tools           # dotnet global tools
+maybe_add_path $HOME/.dotnet                 # dotnet runtime & SDK
+maybe_add_path $HOME/go/bin                  # Go binaries
 maybe_add_path /usr/local/opt/ruby/bin   # Ruby gem executeables
-maybe_add_path ~/bin                     # user programs
-maybe_add_path ~/.bin                    # user programs
+maybe_add_path $HOME/bin                     # user programs
+maybe_add_path $HOME/.bin                    # user programs
 
 export PATH
 
