@@ -35,7 +35,7 @@ case `uname` in
 		ln -sni ${DIR}/code/settings.json ~/.config/Code/User/settings.json
 		ln -sni ${DIR}/code/keybindings.json ~/.config/Code/User/keybindings.json
 		sudo ln -sni ${DIR}/logid.cfg /etc/logid.cfg
-		# Map option <-> command so that M-x is in the "usual" place. 
-		gsettings set org.gnome.desktop.input-sources xkb-options "['altwin:swap_alt_win']"
+		## Map option <-> command so that M-x is in the "usual" place. 
+		#gsettings set org.gnome.desktop.input-sources xkb-options "['altwin:swap_alt_win']"
 		;;
 esac
