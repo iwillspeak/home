@@ -16,6 +16,7 @@ maybe_add_path $HOME/go/bin                  # Go binaries
 maybe_add_path /usr/local/opt/ruby/bin   # Ruby gem executeables
 maybe_add_path $HOME/bin                     # user programs
 maybe_add_path $HOME/.bin                    # user programs
+maybe_add_path $HOME/.local/bin              # more user programs - Copilot etc.
 
 export PATH
 
@@ -54,9 +55,9 @@ fi
 ### Added by Gcloud ####
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '$HOME/google-cloud-sdk/path.bash.inc' ]; then . '$HOME/google-cloud-sdk/path.bash.inc'; fi
+if [ -f "$HOME/google-cloud-sdk/path.bash.inc" ]; then . "$HOME/google-cloud-sdk/path.bash.inc"; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '$HOME/google-cloud-sdk/completion.bash.inc' ]; then . '$HOME/google-cloud-sdk/completion.bash.inc'; fi
+if [ -f "$HOME/google-cloud-sdk/completion.bash.inc" ]; then . "$HOME/google-cloud-sdk/completion.bash.inc"; fi
 
-. "$HOME/.local/bin/env"
+if [ -f "$HOME/.local/bin/env" ]; then . "$HOME/.local/bin/env"; fi
