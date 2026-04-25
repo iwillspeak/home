@@ -1,4 +1,18 @@
 {
-    "defaultCommitMessagePrompt": "Write a commit message in Conventional Commits format. Use one of the following types: feat, fix, docs, style, refactor, perf, test, build, ci, chore, revert. Keep the first line of the message concise and under 72 characters. Include a more detailed summary of the changes in additional paragraphs. Example summary: 'feat(auth): add JWT authentication support'."
+  "banner": "never",
+  "default_commit_message_prompt": "Write a commit message in Conventional Commits format. Use one of the following types: feat, fix, docs, style, refactor, perf, test, build, ci, chore, revert. Keep the first line of the message concise and under 72 characters. Use Title Case in Your First Line. Include a more detailed summary of the changes in additional paragraphs. Example summary: 'feat(auth): Add JWT Authentication Support'.",
+  "trusted_folders": [
+    "/home/will/Repositories/iwillspeak.github.io"
+  ],
+  "last_logged_in_user": {
+    "host": "https://github.com",
+    "login": "iwillspeak"
+  },
+  "logged_in_users": [
+    {
+      "host": "https://github.com",
+      "login": "iwillspeak"
+    }
+  ],
+  "firstLaunchAt": "2026-03-11T00:00:00.000Z"
 }
-  
